@@ -94,7 +94,7 @@ for(k in 1:kk)
 
 par(mfrow=c(2,2),mar=c(3,3,3,3))
  plot(res.rf[,1],res.rf[,2],pch=20,col="blue",xlim=c(-100,100),ylim=c(-100,100),xlab="True",ylab="Predict",main="RF - test")
- m = cor.test(res.rf[,1],res.rf[,2])  or report MSE ..... 
+ m = cor.test(res.rf[,1],res.rf[,2])  # or report MSE ..... 
 legend("topright",legend=paste(m$estimate,"\n",m$p.value,sep=""),bty="n")
  plot(res.knn[,1],res.knn[,2],pch=20,col="blue",xlim=c(-100,100),ylim=c(-100,100),xlab="True",ylab="Predict",main="KNN - test")
   m = cor.test(res.knn[,1],res.knn[,2])
